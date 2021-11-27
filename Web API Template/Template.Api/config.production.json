@@ -1,0 +1,19 @@
+{
+  "ClientId": "Production_Template_Client",
+  "ShowException": false,
+  "Endpoints": {
+    "LOGGING": "http://its-idmprd-app.ad.unc.edu/Services/unc.its.logging.api/v1/",
+    "DAL_DATA": "http://its-idmprd-app.ad.unc.edu/Services/data.api/v1/"
+  },
+  "IdentityConnection": {
+    "IdentityServer": "https://selfservice.unc.edu/identityserver",
+    "RequireHttpsMetadata": false,
+    "ClientId": "INTERNAL_API",
+    "ClientSecret": "w=6JD=\\,V?M5{_5J",
+    "Scope": "DAL_DATA_ACCESS",
+    "SkipAuth": true
+  }
+
+
+
+}

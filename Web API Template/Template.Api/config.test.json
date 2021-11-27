@@ -1,0 +1,23 @@
+{
+  "ClientId": "Test_Template_Client",
+  "ShowException": true,
+  "Endpoints": {
+    "DAL_DATA": "http://its-idmtst-app.adtest.unc.edu/services/data.api/v1/",
+    "LOGGING2": "http://localhost:11005/v1/",
+    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/unc.its.logging.api/v1/"
+  },
+
+  "IdentityConnection": {
+    "IdentityServer": "http://its-idmtst-web.adtest.unc.edu/identityserver",
+    "RequireHttpsMetadata": false,
+    //client credentials are needed only to interact with data access layer
+    "ClientId": "INTERNAL_API",
+    "ClientSecret": "w=6JD=\\,V?M5{_5J",
+    //Scope is setup on the dependent resource, a policy is set in the startup of resource which will dictate which endpoints will be accessible
+    "Scope": "DAL_DATA_ACCESS",
+    //we can skip auth requirement if needed in local environment, allowing requests to be made without authenticating
+    //Dependencies on DATA.API will still need to be done using credentials above if SkipAuth is enforced on that dependency. 
+    "SkipAuth": true
+  }
+
+}

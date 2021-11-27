@@ -1,0 +1,13 @@
+{
+  "ClientId": "Test_Template_Client",
+  //"BasePathForTests": "https://localhost:44339/v1",
+  "ShowException": true,
+  "Endpoints": {
+    "LOGGING2": "http://localhost:11005/v1/",
+    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/unc.its.logging.api/v1/",
+    "DAL_DATA": "http://its-idmtst-app.adtest.unc.edu/Services/data.api/v1/"
+
+  }
+
+
+}

@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>Service Host Project</Name>
+    <Description>Template solution for creating a Windows Service application</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>SeviceHostServiceProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+  <ProjectCollection>
+  <SolutionFolder Name="ServiceProject">
+  <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Domain">
+	ServiceTask.Domain\MyTemplate.vstemplate
+	</ProjectTemplateLink>
+    <ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.Infrastructure">
+	ServiceTask.Infrastructure\MyTemplate.vstemplate
+	</ProjectTemplateLink>
+	<ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.ClientHost">
+	ServiceTask.ClientHost\MyTemplate.vstemplate
+	</ProjectTemplateLink>
+	<ProjectTemplateLink CopyParameters="true" ProjectName="$projectname$.TestClient">
+	ServiceTask.TestClient\MyTemplate.vstemplate
+	</ProjectTemplateLink>
+  </SolutionFolder>
+  </ProjectCollection>
+	
+  </TemplateContent>
+</VSTemplate>

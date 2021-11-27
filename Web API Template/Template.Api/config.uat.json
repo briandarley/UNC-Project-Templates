@@ -1,0 +1,19 @@
+{
+  "ClientId": "UAT_Template_Client",
+  "ShowException": false,
+  "Endpoints": {
+    "LOGGING": "https://its-idmuat-web.ad.unc.edu/Services/unc.its.logging.api/v1/",
+    "DAL_DATA": "https://its-idmuat-web.ad.unc.edu/Services/data.api/v1/"
+  },
+  "IdentityConnection": {
+    "IdentityServer": "https://its-idmuat-web.ad.unc.edu/identityserver",
+    "RequireHttpsMetadata": false,
+    "ClientId": "INTERNAL_API",
+    "ClientSecret": "w=6JD=\\,V?M5{_5J",
+    "Scope": "DAL_DATA_ACCESS",
+    "SkipAuth": true
+  }
+
+
+
+}
