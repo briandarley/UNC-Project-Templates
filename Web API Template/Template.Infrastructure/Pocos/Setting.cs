@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.Pocos
+﻿namespace Template.Infrastructure.Pocos
 {
     public class Setting
     {

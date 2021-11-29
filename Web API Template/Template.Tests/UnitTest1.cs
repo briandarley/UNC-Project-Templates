@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace $safeprojectname$
+namespace Template.Tests
 {
     public class Tests
     {

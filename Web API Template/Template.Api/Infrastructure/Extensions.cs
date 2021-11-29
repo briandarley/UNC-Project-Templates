@@ -1,7 +1,10 @@
-﻿using System.Security.Principal;
+﻿using System.Linq;
+using System.Security.Principal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Template.Infrastructure.Interfaces.Services;
+using Template.Infrastructure.Pocos;
 using Template.Infrastructure.Services.Internals;
 using UNC.API.Base.Infrastructure;
 using UNC.HttpClient;
@@ -9,8 +12,9 @@ using UNC.HttpClient.Interfaces;
 using UNC.HttpClient.Models;
 using UNC.Services;
 using UNC.Services.Infrastructure;
+using UNC.Services.Interfaces.Response;
 
-namespace $safeprojectname$.Infrastructure
+namespace Template.Api.Infrastructure
 {
     public static class Extensions
     {
@@ -33,9 +37,6 @@ namespace $safeprojectname$.Infrastructure
 
                 options.SwaggerDoc("contacts", new OpenApiInfo { Title = "Contacts Controller", Version = "v1", Description = "API Endpoints for RWD of Contacts" });
                 options.SwaggerDoc("entities", new OpenApiInfo { Title = "Entities Controller", Version = "v1", Description = "API Endpoints for R of Entities" });
-                options.SwaggerDoc("groups", new OpenApiInfo { Title = "Groups Controller", Version = "v1", Description = "API Endpoints for RWD of Groups" });
-                options.SwaggerDoc("organizationalUnits", new OpenApiInfo { Title = "Organizational Units Controller", Version = "v1", Description = "API Endpoints for R of Organizational Units" });
-                options.SwaggerDoc("users", new OpenApiInfo { Title = "Users Controller", Version = "v1", Description = "API Endpoints for RW of Users" });
 
 
             });
@@ -56,8 +57,16 @@ namespace $safeprojectname$.Infrastructure
 
 
             services.AddHttpContextAccessor();
+            
+            services.AddSingleton(cfg =>
+            {
+                var dataService = cfg.GetRequiredService<IDalDataService>();
+                var settingsRequest = dataService.GetSettings();
+                settingsRequest.Wait();
+                var settings = ((ICollectionResponse<Setting>)settingsRequest.Result).Entities;
+                return settings.ToList();
+            });
 
-           
 
             services.AddTransient<IWebClient>(cfg =>
             {

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using UNC.Services.Infrastructure;
 
-namespace $safeprojectname$.Services.Internals
+namespace Template.Infrastructure.Services.Internals
 {
     public class AutoMapperService : AutoMapperServiceBase
     {

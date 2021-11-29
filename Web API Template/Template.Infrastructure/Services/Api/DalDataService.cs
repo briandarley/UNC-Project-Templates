@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Serilog;
-using $safeprojectname$.Interfaces.Services;
-using $safeprojectname$.Pocos;
+using Template.Infrastructure.Interfaces.Services;
+using Template.Infrastructure.Pocos;
 using UNC.Extensions.General;
 using UNC.HttpClient.Interfaces;
 using UNC.Services;
 using UNC.Services.Interfaces.Response;
 
-namespace $safeprojectname$.Services.Api
+namespace Template.Infrastructure.Services.Api
 {
     public class DalDataService : ServiceBase, IDalDataService
     {

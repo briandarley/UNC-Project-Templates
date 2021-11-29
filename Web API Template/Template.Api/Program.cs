@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using UNC.Extensions.General;
 
-namespace $safeprojectname$
+namespace Template.Api
 {
     public class Program
     {

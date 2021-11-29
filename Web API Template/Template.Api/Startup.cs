@@ -8,12 +8,12 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using $safeprojectname$.Infrastructure;
+using Template.Api.Infrastructure;
 using UNC.API.Base.Filters;
 using UNC.API.Base.Infrastructure;
 using Unchase.Swashbuckle.AspNetCore.Extensions.Extensions;
 
-namespace $safeprojectname$
+namespace Template.Api
 {
     public class Startup
     {

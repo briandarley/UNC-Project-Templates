@@ -1,7 +1,7 @@
 ﻿using System;
 using AutoMapper;
 
-namespace $safeprojectname$.Services.Mapper
+namespace Template.Infrastructure.Services.Mapper
 {
     public class MapperService
     {
