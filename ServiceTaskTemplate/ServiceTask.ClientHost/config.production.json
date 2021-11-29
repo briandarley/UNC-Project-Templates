@@ -1,0 +1,27 @@
+{
+  "ClientId": "MailProvisioner_Client",
+  "Endpoints": {
+
+    "LOGGING": "http://its-idmprd-app.ad.unc.edu/Services/unc.its.logging.api/v1/",
+    "DAL_DATA": "http://its-idmprd-app.ad.unc.edu/Services/data.api/v1/",
+    "LDAP": "http://its-idmprd-app.ad.unc.edu/Services/ldap/v1/",
+    "ACTIVE_DIRECTORY": "http://its-idmprd-app.ad.unc.edu/services/activedirectory/v1/",
+    "EXCHANGE": "http://its-idmprd-app.ad.unc.edu/Services/powershell/Exchange.api/v1/",
+    "GRAPH_API": "http://its-idmprd-app.ad.unc.edu/Services/microsoft-graph.api/v1/",
+    "MICROSOFT365": "http://its-idmprd-app.ad.unc.edu/Services/powershell/Microsoft365.API/v1/",
+    "PERSON_SERVICE": "http://its-idmprd-app.ad.unc.edu/services/personservices.Api/v1/",
+    "SMTP_MESSAGE": "http://its-idmprd-app.ad.unc.edu/services/Messaging.Smtp.API/v1/"
+  },
+  "IdentityConnection": {
+    "IdentityServer": "https://selfservice.unc.edu/identityserver",
+    "RequireHttpsMetadata": false,
+    //client credentials are needed only to interact with data access layer
+    "ClientId": "INTERNAL_API",
+    "ClientSecret": "w=6JD=\\,V?M5{_5J",
+    //Scope is setup on the dependent resource, a policy is set in the startup of resource which will dictate which endpoints will be accessible
+    "Scope": "DAL_DATA_ACCESS",
+    //we can skip auth requirement if needed in local environment, allowing requests to be made without authenticating
+    //Dependencies on DATA.API will still need to be done using credentials above if SkipAuth is enforced on that dependency. 
+    "SkipAuth": true
+  }
+}
