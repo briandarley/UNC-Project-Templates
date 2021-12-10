@@ -2,7 +2,7 @@
   "ClientId": "Test_MailProvisioner_Client",
   "Endpoints": {
 
-    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/unc.its.logging.api/v1/",
+    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/logging.api/v1/",
     "DAL_DATA": "http://its-idmtst-app.adtest.unc.edu/Services/data.api/v1/",
     "LDAP": "http://its-idmtst-app.adtest.unc.edu/Services/ldap/v1/",
     "ACTIVE_DIRECTORY": "http://its-idmtst-app.adtest.unc.edu/services/activedirectory/v1/",

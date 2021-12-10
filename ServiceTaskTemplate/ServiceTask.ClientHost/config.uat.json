@@ -2,7 +2,7 @@
   "ClientId": "Uat_MailProvisioner_Client",
   "Endpoints": {
 
-    "LOGGING": "https://its-idmuat-web.ad.unc.edu/Services/unc.its.logging.api/v1/",
+    "LOGGING": "https://its-idmuat-web.ad.unc.edu/Services/logging.api/v1/",
     "DAL_DATA": "https://its-idmuat-web.ad.unc.edu/Services/data.api/v1/",
     "LDAP": "https://its-idmuat-web.ad.unc.edu/Services/ldap/v1/",
     "ACTIVE_DIRECTORY": "https://its-idmuat-web.ad.unc.edu/services/activedirectory/v1/",
