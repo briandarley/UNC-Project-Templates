@@ -5,7 +5,7 @@
   "ShowException": true,
   "Endpoints": {
     
-    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/unc.its.logging.api/v1/",
+    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/logging.api/v1/",
     "DAL_DATA": "http://its-idmtst-app.adtest.unc.edu/Services/data.api/v1/"
   },
   "IdentityConnection": {

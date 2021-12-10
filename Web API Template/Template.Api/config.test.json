@@ -4,7 +4,7 @@
   "Endpoints": {
     "DAL_DATA": "http://its-idmtst-app.adtest.unc.edu/services/data.api/v1/",
     "LOGGING2": "http://localhost:11005/v1/",
-    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/unc.its.logging.api/v1/"
+    "LOGGING": "http://its-idmtst-app.adtest.unc.edu/Services/logging.api/v1/"
   },
 
   "IdentityConnection": {
