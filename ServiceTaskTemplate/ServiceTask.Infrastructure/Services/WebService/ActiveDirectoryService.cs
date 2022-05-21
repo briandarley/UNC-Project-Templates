@@ -79,12 +79,12 @@ namespace $ext_projectname$.Infrastructure.Services.WebService
 
                 if (adUser.DistinguishedName.IsEmptyOrNull())
                 {
-                    return ErrorResponse("Required property DistinguishedName is required on object AdUser");
+                    Return LogError("Required property DistinguishedName is required on object AdUser");
                 }
 
                 if (adUser.ProxyAddresses is null || !adUser.ProxyAddresses.Any())
                 {
-                    return ErrorResponse("Required property ProxyAddresses is empty or null");
+                    Return LogError("Required property ProxyAddresses is empty or null");
                 }
 
                 var model = new
@@ -116,7 +116,7 @@ namespace $ext_projectname$.Infrastructure.Services.WebService
 
                 if (adUser.DistinguishedName.IsEmptyOrNull())
                 {
-                    return ErrorResponse("Required property DistinguishedName is required on object AdUser");
+                    Return LogError("Required property DistinguishedName is required on object AdUser");
                 }
 
                 if (adUser.ExtensionAttributes is null)

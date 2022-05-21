@@ -2,15 +2,15 @@
   "ClientId": "MailProvisioner_Client",
   "Endpoints": {
 
-    "LOGGING": "http://its-idmprd-app.ad.unc.edu/Services/logging.api/v1/",
-    "DAL_DATA": "http://its-idmprd-app.ad.unc.edu/Services/data.api/v1/",
-    "LDAP": "http://its-idmprd-app.ad.unc.edu/Services/ldap/v1/",
-    "ACTIVE_DIRECTORY": "http://its-idmprd-app.ad.unc.edu/services/activedirectory/v1/",
-    "EXCHANGE": "http://its-idmprd-app.ad.unc.edu/Services/powershell/Exchange.api/v1/",
-    "GRAPH_API": "http://its-idmprd-app.ad.unc.edu/Services/microsoft-graph.api/v1/",
-    "MICROSOFT365": "http://its-idmprd-app.ad.unc.edu/Services/powershell/Microsoft365.API/v1/",
-    "PERSON_SERVICE": "http://its-idmprd-app.ad.unc.edu/services/personservices.Api/v1/",
-    "SMTP_MESSAGE": "http://its-idmprd-app.ad.unc.edu/services/Messaging.Smtp.API/v1/"
+    "LOGGING": "https://its-idmprd-app.ad.unc.edu/Services/logging.api/v1/",
+    "DAL_DATA": "https://its-idmprd-app.ad.unc.edu/Services/data.api/v1/",
+    "LDAP": "https://its-idmprd-app.ad.unc.edu/Services/ldap/v1/",
+    "ACTIVE_DIRECTORY": "https://its-idmprd-app.ad.unc.edu/services/activedirectory/v1/",
+    "EXCHANGE": "https://its-idmprd-app.ad.unc.edu/Services/powershell/Exchange.api/v1/",
+    "GRAPH_API": "https://its-idmprd-app.ad.unc.edu/Services/microsoft-graph.api/v1/",
+    "MICROSOFT365": "https://its-idmprd-app.ad.unc.edu/Services/powershell/Microsoft365.API/v1/",
+    "PERSON_SERVICE": "https://its-idmprd-app.ad.unc.edu/services/personservices.Api/v1/",
+    "SMTP_MESSAGE": "https://its-idmprd-app.ad.unc.edu/services/Messaging.Smtp.API/v1/"
   },
   "IdentityConnection": {
     "IdentityServer": "https://selfservice.unc.edu/identityserver",
